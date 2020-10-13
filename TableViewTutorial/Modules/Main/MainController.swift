@@ -20,6 +20,8 @@ final class MainController: UIViewController {
         mainView = MainView(controller: self)
         view = mainView //Меняем стандартный View на MainView (наш)
         mainView.configureView() //Вызываем нашу функцию
+        
+        mainView.configureView()
     }
     
     
