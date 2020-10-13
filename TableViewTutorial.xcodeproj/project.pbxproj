@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		AC544A2425360C43005998E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC544A2325360C43005998E6 /* AppDelegate.swift */; };
 		AC544A2625360C43005998E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC544A2525360C43005998E6 /* SceneDelegate.swift */; };
-		AC544A2825360C43005998E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC544A2725360C43005998E6 /* ViewController.swift */; };
-		AC544A2B25360C43005998E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC544A2925360C43005998E6 /* Main.storyboard */; };
 		AC544A2D25360C44005998E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC544A2C25360C44005998E6 /* Assets.xcassets */; };
 		AC544A3025360C44005998E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC544A2E25360C44005998E6 /* LaunchScreen.storyboard */; };
+		AC544A4225360DEF005998E6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC544A4125360DEF005998E6 /* MainView.swift */; };
+		AC544A4625360DF8005998E6 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC544A4525360DF8005998E6 /* MainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC544A2025360C43005998E6 /* TableViewTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC544A2325360C43005998E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC544A2525360C43005998E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC544A2725360C43005998E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC544A2A25360C43005998E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC544A2C25360C44005998E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC544A2F25360C44005998E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC544A3125360C44005998E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC544A4125360DEF005998E6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AC544A4525360DF8005998E6 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,39 @@
 		AC544A2225360C43005998E6 /* TableViewTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				AC544A3F25360DAE005998E6 /* Modules */,
+				AC544A3C25360CA3005998E6 /* SupportingFiles */,
+			);
+			path = TableViewTutorial;
+			sourceTree = "<group>";
+		};
+		AC544A3C25360CA3005998E6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				AC544A2325360C43005998E6 /* AppDelegate.swift */,
 				AC544A2525360C43005998E6 /* SceneDelegate.swift */,
-				AC544A2725360C43005998E6 /* ViewController.swift */,
-				AC544A2925360C43005998E6 /* Main.storyboard */,
 				AC544A2C25360C44005998E6 /* Assets.xcassets */,
 				AC544A2E25360C44005998E6 /* LaunchScreen.storyboard */,
 				AC544A3125360C44005998E6 /* Info.plist */,
 			);
-			path = TableViewTutorial;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AC544A3F25360DAE005998E6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AC544A4025360DE5005998E6 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AC544A4025360DE5005998E6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AC544A4125360DEF005998E6 /* MainView.swift */,
+				AC544A4525360DF8005998E6 /* MainController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +150,6 @@
 			files = (
 				AC544A3025360C44005998E6 /* LaunchScreen.storyboard in Resources */,
 				AC544A2D25360C44005998E6 /* Assets.xcassets in Resources */,
-				AC544A2B25360C43005998E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC544A2825360C43005998E6 /* ViewController.swift in Sources */,
+				AC544A4625360DF8005998E6 /* MainController.swift in Sources */,
 				AC544A2425360C43005998E6 /* AppDelegate.swift in Sources */,
+				AC544A4225360DEF005998E6 /* MainView.swift in Sources */,
 				AC544A2625360C43005998E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +170,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AC544A2925360C43005998E6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC544A2A25360C43005998E6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AC544A2E25360C44005998E6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +304,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89WB9E7UEU;
-				INFOPLIST_FILE = TableViewTutorial/Info.plist;
+				INFOPLIST_FILE = TableViewTutorial/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitsoev.TableViewTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +324,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89WB9E7UEU;
-				INFOPLIST_FILE = TableViewTutorial/Info.plist;
+				INFOPLIST_FILE = TableViewTutorial/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitsoev.TableViewTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
